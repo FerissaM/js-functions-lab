@@ -1,33 +1,39 @@
-/*
-Exercise 1:
-  - Define an empty array named foods
-*/
+console.log('app.js is loading')
 
-// Exercise 1 has been completed for you...
 
-const foods = [];
+// defining a function
+// declaring a function
+// creating the reusable block of code
+// to be used at a later time in the program
+function sayHello(personsName){
+    //write the code to say hello here
+    console.log(`Hello ${personsName}`)
+}
 
-console.log('Exercise 1 Result:\n', foods);
+// execute the function
+// invoke the function
+// call the function
 
-/*
-Exercise 2:
-  - Add the strings 'pizza' & 'cheeseburger' to the foods array such that 'pizza' comes before 'cheeseburger'.
-*/
+// write the functions name ()
+sayHello('Shavon'); //runs the block code defined by the sayHello func
+sayHello('Megan');
+sayHello('Ben');
+sayHello('Augusta');
 
-// Complete Exercise 2 below...
 
-foods.push('pizza', 'cheeseburger');
+function sayGoodbye(phrase, personsName){
+    console.log(`${phrase}, ${personsName}`);
+}
 
-console.log('Exercise 2 Result:\n',  foods);
+// define and call the function
+// sayGoodbye should accept two parameters, one phrase, and on person
+// add it logs a message
+// Adios, Laura
+// Chao, Becky
+// Goodbye, Chad
+// Peace, Frankie
 
-/*
-Exercise 3:
-  - Add the string 'taco' to the foods array so that 'taco' is the first food in the array.
-*/
-
-// Complete Exercise 3 below...
-
-foods.unshift('taco');
-
-console.log('Exercise 3 Result:\n', foods);
-
+sayGoodbye('Adios', 'Laura');
+sayGoodbye('Chao', 'Becky');
+sayGoodbye('Goodbye', 'Chad');
+sayGoodbye('Peace', 'Frankie');
