@@ -62,3 +62,98 @@ playerOne = getPlayerUserName('Luke'); // == > 'Luke'
 playerTwo = getPlayerUserName('Laura'); /// == > 'Laura'
 playerThree = getPlayerUserName('Kate');
 playerFour = getPlayerUserName('Kevin');
+
+
+
+
+// 1.
+function maxOfTwoNumbers(x, y) {
+    if (x >= y) {
+      return x;
+    } else {
+      return y;
+    }
+    
+    // or more "elegantly" using the fantastic ternary expression!
+    // return  x >= y ? x : y;
+  }
+  
+  console.log(maxOfTwoNumbers(3, 9));
+  
+  // 2.
+  function maxOfThree(n1, n2, n3) {
+    if ((n1 >= n2) && (n1 >= n3)) {
+        return n1;
+    } else if ((n2 >= n1) && (n2 >= n3)) {
+        return n2;
+    } else if ((n3 >= n1) && (n3 >= n1)) {
+        return n3;
+    }
+  }
+
+  console.log(maxOfThree('12', '24', '08'));
+
+  // 3.
+  function isCharAVowel(character){ 
+    if (character = 'a', 'e', 'i', 'o', 'u') {
+        return true;
+    } else {
+        return false;
+    }
+  }
+
+  console.log(isCharAVowel(`p`));
+  //to be edited, keeps on returning true
+
+  // 4.
+  function sumArray(array) {
+    let sum = 0;
+    for (let i = 0; i < array.length; i++) {
+        sum += array [i];
+    } return sum;
+  }
+
+  console.log(sumArray([12, 6]));
+
+ // 5. 
+ function multiplyArray(array) {
+    let product = 1;
+    for (let i = 0; i < array.length; i++) {
+        product = product * array [i];
+    }   return product;
+ }
+
+ console.log(multiplyArray([5, 6]));
+
+ // 6. 
+ function numArgs (...arguments) {
+    return arguments.length;
+ }
+
+ console.log(numArgs(['1', '5', '2']));
+// to be edited, keeps on returning 1
+
+
+// 7. 
+function reverseString(char) {
+    return char.split('').reverse().join('');
+}
+
+console.log(reverseString('kachow'));
+
+// 8.
+function longestStringInArray(string) {
+    const longestArray = string.split(' ').sort(function (a, b)  { return b.length - a.length; });
+    return longestArray[0].length;
+}
+
+console.log(longestStringInArray('kfc', 'mcdo'));
+
+// 9. 
+function stringsLongerThan (array, length) {
+    return array.filter(function([str]) {
+        return (str.length > length);
+    });
+}
+
+console.log(stringsLongerThan(['mcdo', 'chjunior', 'jollibee']));
